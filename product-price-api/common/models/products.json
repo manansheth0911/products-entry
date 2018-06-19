@@ -1,0 +1,30 @@
+{
+  "name": "products",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "productName": {
+      "type": "string",
+      "required": true
+    },
+    "productPrice": {
+      "type": "number",
+      "required": true
+    },
+    "gstRate": {
+      "type": "number",
+      "required": true
+    },
+    "finalPrice": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

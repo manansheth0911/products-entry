@@ -1,0 +1,29 @@
+<style media="screen">
+table, th, td {
+  border: 1px solid black;
+}
+tr {
+  text-align: center;
+}
+</style>
+
+<h1 style="text-align:center">List of the products listed</h1>
+<div style="padding-top:2%"></div>
+<md-content style="justify-content:center">
+        <md-table-container>
+          <table style="width:80%" align="center">
+            <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>GST Slab</th>
+              <th>Final Price</th>
+            </tr>
+            <tr ng-repeat="x in table_data">
+              <td>{{x.productName}}</td>
+              <td>{{x.productPrice}}</td>
+              <td>{{x.gstRate}}%</td>
+              <td>Rs. {{x.finalPrice}}/-</td>
+            </tr>
+        </table>
+      </md-table-container>
+</md-content>

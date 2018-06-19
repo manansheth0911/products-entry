@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Entry of prices</title>
+    <link rel="stylesheet" href="angular-material.min.css">
+  </head>
+  <body ng-app="priceEntry">
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBVd-ht5-Ll9XuKxDr6mE5VWdMx26s-Sgk",
+        authDomain: "products-5e3c7.firebaseapp.com",
+        databaseURL: "https://products-5e3c7.firebaseio.com",
+        projectId: "products-5e3c7",
+        storageBucket: "products-5e3c7.appspot.com",
+        messagingSenderId: "791385612703"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <div ng-view="" style="min-height:80vh; padding:5%"></div>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-animate.min.js"></script>
+    <script src="js/angular-aria.min.js"></script>
+    <script src="js/angular-messages.min.js"></script>
+    <script src="js/angular-route.js"></script>
+
+    <!-- Bower Components -->
+    <script src="bower_components/ng-loading-overlay/src/ng-loading-overlay.js"></script>
+
+    <script type="text/javascript" src="js/google_chart.js"></script>
+
+
+    <!-- Angular Material Library -->
+    <script src="js/angular-material.min.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/raw_data.js"></script>
+
+
+  </body>
+</html>

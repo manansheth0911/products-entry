@@ -1,0 +1,30 @@
+<div class="" ng-controller="MainCtrl">
+  <md-content class="md-padding" >
+    <h1 >Enter New Product</h1>
+    <p>Enter the details of the new product as below. All fields are mandatory:</p>
+  </md-content>
+
+  <md-content class="md-padding" >
+    <md-input-container class="md-block" flex-gt-sm style="width:50%" >
+      <label>New Product Name</label>
+      <input ng-model="productName" md-no-float required>
+  </md-content>
+
+  <md-content class="md-padding" >
+    <md-input-container class="md-block" flex-gt-sm style="width:50%">
+      <label>Product Price</label>
+      <input ng-model="productPrice" md-no-float required type="number">
+  </md-content>
+
+  <md-content class="md-padding" >
+    <md-input-container>
+    <md-select ng-model="gstRate" placeholder="Select a GST Rate" ng-change = rateChange()>
+      <md-option ng-value="x" ng-repeat="x in gst_rate_list">{{x}}%</md-option>
+    </md-select>
+  </md-input-container>
+  </md-content>
+
+<div class="" style="display:flex;justify-content:center;align-items:center">
+  <md-button class="md-raised md-primary" ng-click="submitData()">Submit</md-button>
+</div>
+</div>

@@ -1,0 +1,27 @@
+<style media="screen">
+  HTMLJSCSS
+.tabsdemoDynamicHeight md-content {
+background-color: transparent !important; }
+.tabsdemoDynamicHeight md-content md-tabs {
+background: #f6f6f6;
+border: 1px solid #e1e1e1; }
+.tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+  background: white; }
+.tabsdemoDynamicHeight md-content h1:first-child {
+margin-top: 0; }
+  </style>
+<div ng-cloak style="box-shadow:0 0 10px 0 rgba(153, 153, 153, 0.392)">
+    <md-content>
+      <md-tabs md-dynamic-height md-border-bottom style="">
+      <md-tab label="New Product">
+        <div ng-include src="'views/newProduct.html'"></div>
+      </md-tab>
+      <md-tab label="View Products">
+         <div ng-include src="'views/priceView.html'"></div>
+      </md-tab>
+      <md-tab label="GST Chart">
+        <div ng-include src="'views/priceChart.html'"></div>
+      </md-tab>
+      </md-tabs>
+    </md-content>
+</div>
